@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h4> Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram? </h4>
+
+<script>
+	//Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+</script>
+
+<script>
+	var anoAtual = 2020
+	var anoInicio = 1500
+	var mediaGeracao = 28
+	var resultDif = anoAtual - anoInicio
+	var quantGeracao = Math.round(resultDif / mediaGeracao)
+
+	function difAnos() {
+		document.write("<big> A diferença de anos entre 2020 e 1500 é de: " + (anoAtual - anoInicio) + " anos</big>")
+		document.write("<br><hr>")
+		document.write((resultDif / mediaGeracao) + " e essa é a quantidade de gerações que tivemos no Brasil desde " + anoInicio + " até " + anoAtual + ". Também pode ser lido aproximadamente como ")
+		document.write(quantGeracao + " gerações")
+		document.write("<hr>")
+	}
+
+	difAnos()
+</script>

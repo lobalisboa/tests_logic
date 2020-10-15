@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    var maximoTentativas = 3
+    var tentaivaAtual = 1
+
+    while (maximoTentativas <= tentaivaAtual) {}
+
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+    } else {
+    	 (loginCadastrado != loginInformado && senhaCadastrada != senhaInformada)
+        alert("Login inválido. Tente novamente " + loginInformado);
+        prompt("Informe novamente seu login");
+        prompt("Informe novamente sua senha");
+         (loginCadastrado != loginInformado && senhaCadastrada != senhaInformada)
+        alert("Login inválido. Tente novamente " + loginInformado);
+        prompt("Informe novamente seu login");
+        prompt("Informe novamente sua senha");
+    }
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ){
+    	document.write("Bem-vindo a sua pagina inicial")
+    }
+</script>
+
+
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maximoTentativas = 3
+    var tentativaAtual = 1
+
+    while (maximoTentativas <= tentativaAtual) {  
+    	var loginInformado = prompt("Informe seu login");
+    	var senhaInformada = prompt("Informe sua senha");
+    }
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        	tentativaAtual = maximoTentativas;
+        }
+        else {
+    	if (tentativaAtual = 3) {
+    		alert("Número de tentaivas esgotado")
+    	}
+    	else {
+    		alert("Login inválido")
+    	}
+       
+    }
+    tentativaAtual = tentativaAtual + 1
+  
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ){
+    	document.write("Bem-vindo a sua pagina inicial")
+    }
+</script>

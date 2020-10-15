@@ -1,0 +1,47 @@
+<meta chainset="UTF-8">
+
+<script>
+	//Escreva um programa que exiba a mensagem "Nossa diferença de idade é", concatenando o resultado da subtração da sua idade com a do seu irmão (ou de um amigo). A resposta pode dar negativa, sem dúvida. Não esqueça de usar as funções pulaLinha e mostra e inclusive a tag <meta> para resolver problema de acentuação.
+</script>
+
+<h2> Exerício da aula 04. </h2>
+Quantos anos você tem de diferença do seu irmão?
+<br> <br>
+Tenho um irmão, Murilo, que nasceu em 2011.
+<br>
+Eu nasci em 1997.
+<br> <br> 
+
+<script>
+
+	function idadeAtual(){
+
+		document.write((anoAtual-anoMurilo) + " Essa é a idade atual de Murilo.");
+		document.write("<br><br>");
+		document.write((anoAtual-anoRafaella) + " Essa é a idade atual de Rafaella.");
+		document.write("<br><br>");
+	}
+
+	function diferencaIdade(){
+		document.write((anoMurilo-anoRafaella) + " Essa é a diferença de idade de Rafaella e Murilo.");
+		document.write("<br><br>");
+	}
+
+	function alertaDiferenca(){
+		alert ( "A diferença de idade de Rafaella e Murilo é de ")
+		alert(difResultado + " anos");
+	}
+
+	var anoAtual = 2020;
+	var anoMurilo = 2011;
+	var anoRafaella = 1997;
+	var difResultado = anoMurilo - anoRafaella;
+
+alertaDiferenca();
+
+	idadeAtual();
+
+	diferencaIdade();
+
+
+</script>	

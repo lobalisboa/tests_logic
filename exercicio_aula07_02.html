@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+    document.write("<br>");
+}
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var contagemInicio = 1
+var contagemFim = 100
+var numerosPares = 2
+
+while (numerosPares <= contagemFim) {
+	mostra("Os números pares de 0 a 100, são: " + numerosPares)
+	numerosPares = numerosPares + 2
+}
+
+mostra("Fim")
+
+
+
+</script>
+
+<br>
+A dificuldade foi descobrir qual ou quais eram as variáveis realmente necessárias para o funcionamento do programa. Como pode se ver, as duas primeiras variáveis são dispensáveis (mesmo a contagem fim, pois poderia apenas explicitar o valor limite e nao criar uma variável).
+<br>
+
+<script>
+	var numeroInicial = 30;
+	var numeroFinal = 40;
+
+	while (numeroInicial <= numeroFinal) {
+
+		if (numeroInicial == 33) {
+			numeroInicial = numeroInicial + 1;
+		}
+		if (numeroInicial == 37) {
+			numeroInicial = numeroInicial + 1;
+		} 
+		else {
+		mostra(numeroInicial);
+			numeroInicial = numeroInicial + 1;
+		}
+	}
+	mostra("Fim")
+
+</script>
+
+
